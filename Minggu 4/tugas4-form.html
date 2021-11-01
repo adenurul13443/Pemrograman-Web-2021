@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir PPDB</title>
+
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        h2{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #87AAAA;
+            line-height: 25px;
+            border: 3px solid #87AAAA;
+            border-radius: 10px;
+        }
+        th{
+            background-color: #316B83;
+            color: white;
+            border: 3px solid #316B83;
+            border-radius: 10px;
+        }
+       
+    </style>
+</head>
+<body background="foto.jpg">
+    <hr width="50%" color="#316B83">
+    <h2>FORMULIR PPDB JALUR ZONASI TAHUN 2020</h2>
+    <hr width="50%" color="#316B83">
+    <br>
+    <form action="proses.php" method="post"></form>
+        <table>
+            <th colspan="3" align="left">INFO PENDAFTARAN</th>
+            <tr>
+                <td><label for="nisn">NISN</label></td> 
+                <td> : </td> 
+                <td><input type="number" id="nisn" name="nisn" ></td> 
+            </tr>
+            <tr>
+                <td><label for="asal_sekolah">Asal Sekolah</label></td> 
+                <td> : </td> 
+                <td><input type="text" id="asal_sekilah" name="asal_sekolah" ></td> 
+            </tr>
+            <tr>
+                <td><label for="tahun_lulus">Tahun Lulus</label></td> 
+                <td> : </td> 
+                <td><input type="number" id="tahun_lulus" name="tahun_lulus" ></td> 
+            </tr>
+            <tr>
+                <th colspan="3" align="left">DATA CALON PESERTA</th>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td> 
+                <td> : </td> 
+                <td><input type="text" id="nama" name="nama" ></td> 
+            </tr>
+            <tr>
+                <td><label for="nik">NIK</label></td> 
+                <td> : </td> 
+                <td><input type="number" id="nik" name="nik" ></td>
+            </tr>
+            <tr>
+                <td><label for="ttl">Tempat/Tanggal Lahir</label></td> 
+                <td> : </td> 
+                <td><input type="text" id="ttl" name="ttl" >
+                <input type="date" id="ttl" name="ttl"></td>
+            </tr>
+            <tr>
+                <td><label for="fc">Fotocopy Akta Kelahiran yang Telah Dilegalisir <i>(Dilampirkan)</i></label></td>
+                <td> : </td> 
+                <td><input type="file" id="fc" name="fc"></td>
+            </tr>
+            <tr>
+                <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+                <td> : </td>
+                <td><input type="radio" name="jenis_kelamin" value="laki-laki">
+                    <label for="jenis_kelamin">Laki-laki</label>
+                    <input type="radio" name="jenis_kelamin" value="perempuan">
+                    <label for="jenis_kelamin">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td> : </td> 
+            </tr>
+            <tr>
+                <td><label for="desa">Desa/Kel.</label></td>
+                <td> : </td>
+                <td><input type="text" id="desa" name="desa"></td>
+            </tr>
+            <tr>
+                <td><label for="kec">Kecamatan</label></td>
+                <td> : </td>
+                <td><input type="text" id="kec" name="kec"></td>
+            </tr>
+            <tr></tr>
+                <td><label for="kab">Kabupaten</label></td>
+                <td> : </td>
+                <td><input type="text" id="kab" name="kab"></td>
+            </tr>
+            <tr>
+                <td><label for="prov">Provinsi</label></td>
+                <td> : </td>
+                <td><select name="prov">
+                    <option value="">Lainnya</option>
+                    <option value="banten">Banten</option>
+                    <option value="dki">DKI Jakarta</option>
+                    <option value="diy">DI Yogyakarta</option>
+                    <option value="jateng">Jawa Tengah</option>
+                    <option value="jabar">Jawa Barat</option>
+                    <option value="bali">Bali</option>
+                    </select>
+                    <input type="text" id="prov" name="prov" placeholder="Lainnya...">
+                </td>
+            <tr>
+                <td ><label for="email">Email Aktif</label></td>
+                <td> : </td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <th colspan="3" align="left">DATA ORANG TUA</th>
+            </tr>
+            <tr>
+                <td ><label for="no_kk">Nomor Kartu Keluarga</label></td>
+                <td> : </td>
+                <td><input type="number" id="no_kk" name="no_kk"></td>
+            </tr>
+            <tr>
+                <td ><label for="nama_ayah">Nama Ayah Kandung</label></td>
+                <td> : </td>
+                <td><input type="text" id="nama_ayah" name="nama_ayah"></td>
+            </tr>
+            <tr>
+                <td ><label for="agama">Agama</label></td>
+                <td> : </td>
+                <td><select name="agama">
+                    <option value="">--Pilih--</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katholik">Katholik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td ><label for="kerja">Pekerjaan</label></td>
+                <td> : </td>
+                <td><input type="text" id="kerja" name="kerja"></td>
+            </tr>
+            <tr>
+                <td ><label for="nama_ibu">Nama Ibu Kandung</label></td>
+                <td> : </td>
+                <td><input type="text" id="nama_ibu" name="nama_ibu"></td>
+            </tr>
+            <tr>
+                <td ><label for="agama">Agama</label></td>
+                <td> : </td>
+                <td><select name="agama">
+                    <option value="">--Pilih--</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katholik">Katholik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td ><label for="kerja">Pekerjaan</label></td>
+                <td> : </td>
+                <td><input type="text" id="kerja" name="kerja"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat_ortu">Alamat Orang Tua</label></td>
+                <td> : </td> 
+            </tr>
+            <tr>
+                <td><label for="desa">Desa/Kel.</label></td>
+                <td> : </td>
+                <td><input type="text" id="desa" name="desa"></td>
+            </tr>
+            <tr>
+                <td><label for="kec">Kecamatan</label></td>
+                <td> : </td>
+                <td><input type="text" id="kec" name="kec"></td>
+            </tr>
+            <tr></tr>
+                <td><label for="kab">Kabupaten</label></td>
+                <td> : </td>
+                <td><input type="text" id="kab" name="kab"></td>
+            </tr>
+            <tr>
+                <td><label for="prov">Provinsi</label></td>
+                <td> : </td>
+                <td><select name="prov">
+                    <option value="">Lainnya</option>
+                    <option value="banten">Banten</option>
+                    <option value="dki">DKI Jakarta</option>
+                    <option value="diy">DI Yogyakarta</option>
+                    <option value="jateng">Jawa Tengah</option>
+                    <option value="jabar">Jawa Barat</option>
+                    <option value="bali">Bali</option>
+                    </select>
+                    <input type="text" id="prov" name="prov" placeholder="Lainnya...">
+                </td>
+            <tr>
+                <td colspan="4" align="right"><input type="submit" name="submit" value="Daftar">
+                    <input type="reset" name="reset" value="Batal">
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+    <p align="center"><b>Copyright @Universitas Dian Nuswantoro</b></p>
+</body>
+</html>

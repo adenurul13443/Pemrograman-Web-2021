@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h2>Registrasi di sini</h2>
+    <form action="proses.php" methode="post">
+        <fieldset>
+            <legend>Registrasi</legend>
+            <p>
+                <label>Nama</label><br>
+                <input type="text" name="nama" placeholder="Nama Lengkap...">
+            </p>
+            <p>
+                <label>Username</label><br>
+                <input type="text" name="username" placeholder="Username...">
+            </p>
+            <p>
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="Your email...">
+            </p>
+            <p>
+                <label>Password</label><br>
+                <input type="password" name="password" placeholder="Masukkan password..."> 
+            </p>
+            <p>
+                <label>Tanggal Lahir</label><br>
+                <input type="date" name="tgl"> 
+            </p>
+            <p>
+                <label>Umur</label><br>
+                <input type="number" min="10" max="90" name="umur"> 
+            </p>
+            <p>
+                <label>Jenis Kelamin : </label>
+                <input type="radio" name="jenis_kelamin" value="laki-laki">
+                    <label for="jenis_kelamin">Laki-laki</label>
+                <input type="radio" name="jenis_kelamin" value="perempuan">
+                    <label for="jenis_kelamin">Perempuan</label>
+            </p>
+            <p>
+                <label>Agama : </label>
+                <select name="agama">
+                    <option value="">--pilih--</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katholik">Katholik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </p>
+            <p>
+                <label>Biografi</label><br>
+                <textarea name="biografi"></textarea>
+            </p>
+            <p>
+                <label>Alamat Web</label> <br>
+                <input type="url" name="web" placeholder="Masukkkan alamat web...">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
