@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 HTML Semantic</title>
+</head>
+<body style="background-color: silver;">
+    <!--Praktikum 1-->
+    <!--LAYOUT-->
+    <header style="background-color: white;">
+        <h1>Belajar Element Semantik di HTML</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <article style="background-color: white">
+        <h1>Tutorial Semantik Untuk Pemula</h1>
+        <p>
+            Elemen  semantik adalah  elemen-elemen  yang menyatakan makna atau tujuan dari elemen itu sendiri.
+            Tujuannya agar kode HTML mudah dibaca dan tidak ada penyalahgunaan tag.
+            Elemen semantik bagus untuk SEO dan juga dapat meningkatkan  accessibility.
+        </p>
+    </article>
+    <br><hr>
+
+    <!--Tag <details> dan <summary>-->
+    <details>
+        <summary>Lihat Detail</summary>
+        <p>Ini adalah konten detailnya</p>
+    </details>
+
+    <br><hr>
+    <!--Praktikum 2-->
+    <!--Membuat file summary-->
+    <article>
+        <h1>Laptop Terbaik untuk Programmer</h1>
+        <details>
+            <summary>Lihat Spesifikasi</summary>
+            Prosesor : Intel Core i9, RAM 32GB, SSd 1TB, HDD 4TB
+        </details>
+    </article>
+
+    <br><hr>
+    <!--Praktikum 3-->
+    <!--Tag <time>-->
+    <article>
+        <h1>Waktu di HTML</h1>
+
+        <p>
+            Ditulis pada <time datetime="2021-09-11">09 November 2021</time>
+        </p>
+        <p>
+            Hari ini saya  ada acara dari pukul <time>08:00</time> sampai pukul <time>10:00</time>
+        </p>
+    </article>
+
+    <br><hr>
+    <!--praktikum 4-->
+    <!--Audio-->
+    <h1>Contoh Audio di Web</h1>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
+    <!--atau bisa juga dengan autoplay-->
+    <!--
+         <audio autoplay=>
+        <source src="audio.mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
+    -->
+   
+    <br><hr>
+    <!--Praktikum 5-->
+    <!--Audio sebagai background-->
+    <h1>Contoh Audio sebagai Background</h1>
+    <p>Audio sedang diputar</p>
+    <audio hidden autoplay loop>
+        <source src="audio2.mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio
+    </audio>
+
+    <br><hr>
+    <!--Praktikum 6-->
+    <!--Video-->
+    <h1>Contoh Video Pada HTML</h1>
+    <video controls>
+        <source src="video.mp4" type="video/webm">
+        Browsermu tidak mendukung tag ii, uograde donk!
+    </video>
+
+    <br><hr>
+    <!--Praktikum 7-->
+    <!--Video GIF-->
+    <h1>Contoh video sebagai gif</h1>
+    <video autoplay loop muted playsinline>
+        <source src="video_gif.mp4" type="video/mp4">
+        <source src="video_gif.webm" type="video/webm">
+    </video>
+
+    <br><hr>
+    <!--Praktikum 8-->
+    <!--Video-Subtitle-->
+    <h1>Contoh Video dengan Subtitle di HTML</h1>
+    <video controls>
+        <source src="videoku.mp4" type="video/mp4">
+        <source src="videoku.webm" type="video/webm">
+        <track src="videoku.vtt" kind="subtitles" srclang="id" label="Indonesia"/>
+    </video>
+
+    <br><hr>
+    <!--Praktikum 9-->
+    <!--Video di Youtube-->
+    <h1>Video dari Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FFzt-saNtnU"></iframe>
+    <br>
+
+    <!--Masih Praktikum 1-->
+    <footer style="background-color: white;">
+        Copyright &copy; 2020 by Ade Nurul A
+    </footer>
+
+</body>
+</html>
