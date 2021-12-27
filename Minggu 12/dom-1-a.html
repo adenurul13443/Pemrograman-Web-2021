@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memilih Elemen Berdasarkan ID</title>
+</head>
+<body>
+    <!-- Elemen div yang akan dipilih dari JS -->
+    <div id="nama"></div>
+    
+    <script type="text/javascript">
+        // mengakses elemen tutorial
+        var nama = document.getElementById("nama");
+        // mengisi teks ke dalam elemen
+        nama.innerText = "Ade Nurul Aisyah";
+        // memberikan CSS ke elemen
+        nama.style.backgroundColor = "#96C7C1";
+        nama.style.padding = "10px";
+    </script>
+
+    <!--Membuat tombol yang bila di klik, heading 1 akan berubah warna karena pada h1 berisi id-->
+    <h1 id="tombol">Button</h1>
+    <button type="button" onclick="document.getElementById('tombol').style.color = '#96C7C1'">
+    Klik Aku!</button>
+</body>
+</html>
